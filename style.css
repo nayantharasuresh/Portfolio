@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Serif", serif;
+}
+#container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+#logo{
+    width: 100px;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.list-items{
+    display: inline;
+}
+.links{
+    text-decoration: none;
+    margin-right: 70px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(188, 37, 37);
+}
+.links:hover{
+    color: black;
+    text-decoration: underline;
+}
+.home-content{
+    margin: 8% 0% 0% 5%;
+}
+#uname{
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 25px;
+}
+#iname{
+    font-family: "Dancing Script", cursive;
+    color: red;
+}
+.personal-details{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.dwnld{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.home-images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 40px;
+}
+.group{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: left 2s, bottom 1s;
+
+    
+}
+.home-images:hover #shape{
+    bottom: 30px;
+}
+.home-images:hover #girl{
+    left: -30px;
+}
+#about{
+    margin: 15% 8% 0% 8%;
+
+}
+.main-head{
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+}
+.sub-head{
+    font-size: 20px;
+    font-family:"Dancing Script", cursive; 
+    color: green;
+}
+.about-img>img{
+  width: 400px;
+}
+.section-head{
+    text-align: center;
+}
+.about-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about-content{
+    font-size: 18px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.information{
+    margin-top: 10px;
+}
+.info-box>span{
+    margin-left: 10px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+#myskill{
+    width: 100%;
+}
+.skill-body{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar-head, .bar-percentage{
+    font-size: 20px;
+    font-weight: bold;
+}
+.base-bar{
+    width: 100%;
+    background-color: black;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    width: 90%;
+    background-color: palevioletred;
+}
+.bts-bar{
+    width: 85%;
+    background-color: palevioletred;
+}
+.css-bar{
+    width: 87%;
+    background-color: palevioletred;
+}
+.js-bar{
+    width: 83%;
+    background-color: palevioletred;
+}
+#contact{
+    margin: 8% ;
+}
+.icon-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:palevioletred;
+    color: blueviolet;
+    margin: 0px 10px;
+    margin-top: 50px;
+    
+}
+.social{
+    color: black;
+    font-size: 25px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, white, palevioletred,yellow,black);
+    animation: rotate 1s;
+}
+.social:hover{
+    color: white;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    80%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+    
+}
+#cpoyright{
+    text-align: center;
+    font-weight: bold;
+}
+#uparrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(240, 146, 59);
+}
+::-webkit-scrollbar-thumb{
+    background-color: palevioletred;
+    border-radius: 20px;
+}
